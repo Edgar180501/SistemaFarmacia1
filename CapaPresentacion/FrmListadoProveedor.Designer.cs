@@ -42,6 +42,7 @@ namespace CapaPresentacion
             this.btnnuevo = new System.Windows.Forms.Button();
             this.btneditar = new System.Windows.Forms.Button();
             this.btneliminar = new System.Windows.Forms.Button();
+            this.btnInformes = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dlistado)).BeginInit();
@@ -167,11 +168,22 @@ namespace CapaPresentacion
             this.btneliminar.UseVisualStyleBackColor = true;
             this.btneliminar.Click += new System.EventHandler(this.btneliminar_Click);
             // 
+            // btnInformes
+            // 
+            this.btnInformes.Location = new System.Drawing.Point(35, 342);
+            this.btnInformes.Name = "btnInformes";
+            this.btnInformes.Size = new System.Drawing.Size(75, 23);
+            this.btnInformes.TabIndex = 6;
+            this.btnInformes.Text = "Informes";
+            this.btnInformes.UseVisualStyleBackColor = true;
+            this.btnInformes.Click += new System.EventHandler(this.btnInformes_Click);
+            // 
             // FrmListadoProveedor
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.btnInformes);
             this.Controls.Add(this.btneliminar);
             this.Controls.Add(this.btneditar);
             this.Controls.Add(this.btnnuevo);
@@ -211,5 +223,6 @@ namespace CapaPresentacion
         private System.Windows.Forms.Button btnnuevo;
         private System.Windows.Forms.Button btneditar;
         private System.Windows.Forms.Button btneliminar;
+        private System.Windows.Forms.Button btnInformes;
     }
 }

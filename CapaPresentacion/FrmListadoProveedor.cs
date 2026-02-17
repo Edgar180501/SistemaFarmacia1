@@ -136,5 +136,23 @@ namespace CapaPresentacion
         {
             this.Close();
         }
+
+        private void btnInformes_Click(object sender, EventArgs e)
+        {
+            if (Sesion.NombreUsuario.ToLower() == "admin")
+            {
+                // ACCESO CONCEDIDO
+                FrmBitacora bitacora = new FrmBitacora();
+                bitacora.ShowDialog(); // ShowDialog bloquea la ventana de atrás hasta que cierres esta
+            }
+            else
+            {
+                // ACCESO DENEGADO
+                MessageBox.Show("Lo sentimos, " + Sesion.NombreReal + ".\n\nNo tienes permisos para ver los informes de auditoría.",
+                                "Acceso Restringido",
+                                MessageBoxButtons.OK,
+                                MessageBoxIcon.Warning);
+            }
+        }
     }
 }

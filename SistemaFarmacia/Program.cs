@@ -1,4 +1,5 @@
-﻿using System;
+﻿using CapaPresentacion;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
@@ -16,6 +17,7 @@ namespace SistemaFarmacia
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
+            Application.Run(new CapaPresentacion.FrmLogin());
             Application.Run(new CapaPresentacion.FrmListadoProveedor());
         }
     }
