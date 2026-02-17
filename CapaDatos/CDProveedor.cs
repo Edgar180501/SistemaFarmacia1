@@ -85,24 +85,31 @@ namespace CapaDatos
             }
             return resul;
         }
-        public string Editar(int id_proveedor, string nombre, CDProveedor prov)
+        public string Editar(CDProveedor cli)
         {
             string resul = "";
             SqlConnection conexion = new SqlConnection();
             try
             {
+                // Abrir conexión a la base de datos
                 conexion.ConnectionString = Conexion.Conn;
                 conexion.Open();
+
+                // Configurar el comando para ejecutar el stored procedure
                 SqlCommand Cmd = new SqlCommand("speditar_Proveedor", conexion);
                 Cmd.CommandType = CommandType.StoredProcedure;
 
-                Cmd.Parameters.AddWithValue("@id_proveedor", prov.Idproveedor);
-                Cmd.Parameters.AddWithValue("@nombre", prov.Nombre);
-                Cmd.Parameters.AddWithValue("@telefono", prov.Telefono);
-                Cmd.Parameters.AddWithValue("@correo", prov.Correo);
-                Cmd.Parameters.AddWithValue("@direccion", prov.Direccion);
-                Cmd.Parameters.AddWithValue("@rfc", prov.Rfc);
+                // Agregar parámetros del stored procedure
+                Cmd.Parameters.AddWithValue("@id_proveedor", cli.Idproveedor);  // ID del cliente a actualizar
+                Cmd.Parameters.AddWithValue("@nombre", cli.Nombre);
+                Cmd.Parameters.AddWithValue("@direccion", cli.Direccion);
+                Cmd.Parameters.AddWithValue("@rfc", cli.Rfc);
+                Cmd.Parameters.AddWithValue("@telefono", cli.Telefono);
+                Cmd.Parameters.AddWithValue("@correo", cli.Correo);
+                Cmd.Parameters.AddWithValue("@estado", cli.Estado);
 
+                // Ejecutar el stored procedure
+                // ExecuteNonQuery() retorna el número de filas afectadas (debe ser 1)
                 resul = Cmd.ExecuteNonQuery() == 1 ? "OK" : "No se pudo actualizar el registro";
             }
             catch (Exception ex)
@@ -111,6 +118,7 @@ namespace CapaDatos
             }
             finally
             {
+                // Cerrar la conexión si está abierta
                 if (conexion.State == ConnectionState.Open)
                 {
                     conexion.Close();
@@ -201,14 +209,9 @@ namespace CapaDatos
             return resul;
         }
 
-        public string Editar(CDProveedor datos)
-        {
-            throw new NotImplementedException();
-        }
-
-        public void Editar(int id_proveedor, string nombre, string telefono, string correo, string direccion, string rfc, string estado)
-        {
-            throw new NotImplementedException();
-        }
+   
     }
+
+       
+    
 }
