@@ -11,5 +11,6 @@ namespace CapaPresentacion
         public static int IdUsuario;
         public static string NombreUsuario;
         public static string NombreReal;
+        public static int IdSesionActual;
     }
 }
