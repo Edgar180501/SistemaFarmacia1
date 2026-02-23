@@ -51,8 +51,10 @@ namespace CapaPresentacion
             // label1
             // 
             this.label1.AutoSize = true;
+            this.label1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(12, 9);
+            this.label1.Image = global::CapaPresentacion.Properties.Resources._5c7df38ffdaded92c49c0f719f36c2e2;
+            this.label1.Location = new System.Drawing.Point(7, 9);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(145, 25);
             this.label1.TabIndex = 0;
@@ -61,6 +63,7 @@ namespace CapaPresentacion
             // 
             // panel1
             // 
+            this.panel1.BackgroundImage = global::CapaPresentacion.Properties.Resources._5c7df38ffdaded92c49c0f719f36c2e2;
             this.panel1.Controls.Add(this.btnsalir);
             this.panel1.Controls.Add(this.btnbuscar);
             this.panel1.Controls.Add(this.txtbuscar);
@@ -99,6 +102,7 @@ namespace CapaPresentacion
             // 
             // groupBox1
             // 
+            this.groupBox1.BackgroundImage = global::CapaPresentacion.Properties.Resources._5c7df38ffdaded92c49c0f719f36c2e2;
             this.groupBox1.Controls.Add(this.rbtnrfc);
             this.groupBox1.Controls.Add(this.rbtnnombre);
             this.groupBox1.Location = new System.Drawing.Point(17, 14);
@@ -132,6 +136,8 @@ namespace CapaPresentacion
             // 
             // dlistado
             // 
+            this.dlistado.BackgroundColor = System.Drawing.SystemColors.Control;
+            this.dlistado.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.dlistado.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dlistado.Location = new System.Drawing.Point(12, 170);
             this.dlistado.Name = "dlistado";
@@ -182,6 +188,7 @@ namespace CapaPresentacion
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackgroundImage = global::CapaPresentacion.Properties.Resources._5c7df38ffdaded92c49c0f719f36c2e2;
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.btnInformes);
             this.Controls.Add(this.btneliminar);

@@ -53,6 +53,7 @@ namespace CapaPresentacion
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Image = global::CapaPresentacion.Properties.Resources._5c7df38ffdaded92c49c0f719f36c2e2;
             this.label1.Location = new System.Drawing.Point(38, 21);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(297, 25);
@@ -212,6 +213,7 @@ namespace CapaPresentacion
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackgroundImage = global::CapaPresentacion.Properties.Resources._5c7df38ffdaded92c49c0f719f36c2e2;
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.txtid_proveedor);
             this.Controls.Add(this.btncancelar);

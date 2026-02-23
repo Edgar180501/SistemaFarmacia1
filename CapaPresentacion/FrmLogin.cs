@@ -32,7 +32,7 @@ namespace CapaPresentacion
         private void btnIngresar_Click(object sender, EventArgs e)
         {
             // REEMPLAZA CON TU CADENA DE CONEXIÓN REAL
-            string cadenaConexion = "Data Source = USUARIO-TVQNB7K; Initial Catalog =  dbfarmacia ;Integrated Security = True";
+            string cadenaConexion = "Data Source = HPEDGAR; Initial Catalog =  dbfarmacia ;Integrated Security = True";
 
             using (SqlConnection con = new SqlConnection(cadenaConexion))
             {
@@ -108,7 +108,7 @@ namespace CapaPresentacion
         {
             if (Sesion.IdSesionActual == 0) return; // Si no hay sesión iniciada, no hacemos nada
 
-            string cadenaConexion = "Data Source = USUARIO-TVQNB7K; Initial Catalog =  dbfarmacia ;Integrated Security = True";
+            string cadenaConexion = "Data Source = HPEDGAR; Initial Catalog =  dbfarmacia ;Integrated Security = True";
 
             using (SqlConnection con = new SqlConnection(cadenaConexion))
             {

@@ -34,6 +34,7 @@
             // 
             // dgvBitacora
             // 
+            this.dgvBitacora.BackgroundColor = System.Drawing.SystemColors.Control;
             this.dgvBitacora.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvBitacora.Location = new System.Drawing.Point(-3, 1);
             this.dgvBitacora.Name = "dgvBitacora";
@@ -45,7 +46,8 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1398, 587);
+            this.BackgroundImage = global::CapaPresentacion.Properties.Resources.e8798d36d8c3f9fffd2dc99d1428bf36;
+            this.ClientSize = new System.Drawing.Size(1370, 587);
             this.Controls.Add(this.dgvBitacora);
             this.Name = "FrmBitacora";
             this.Text = "FrmBitacora";
