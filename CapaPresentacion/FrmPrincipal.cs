@@ -53,5 +53,31 @@ namespace CapaPresentacion
             // Opcional: Puedes cargar una pantalla de bienvenida al iniciar
             // AbrirFormularioEnPanel(new FrmBienvenida());
         }
+
+        private void panelMenu_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnRegistrar_Click(object sender, EventArgs e)
+        {
+            AbrirFormularioEnPanel(new FrmRegistrarProveedor());
+        }
+
+        private void btnProveedores_Click_1(object sender, EventArgs e)
+        {
+            // Reemplaza 'panelCentral' por el nombre que le pusiste a tu panel del medio
+            AbrirFormularioEnPanel(new FrmListadoProveedor());
+        }
+
+        private void btnBitácora_Click(object sender, EventArgs e)
+        {
+            AbrirFormularioEnPanel(new FrmBitacora());
+        }
     }
 }

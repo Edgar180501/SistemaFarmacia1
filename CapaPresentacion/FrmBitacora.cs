@@ -25,7 +25,7 @@ namespace CapaPresentacion
 
         private void FrmBitacora_Load(object sender, EventArgs e)
         {
-            string cadenaConexion = "Data source = USUARIO-TVQNB7K; Initial Catalog = dbfarmacia; Integrated Security = true";
+            string cadenaConexion = "Data source = HPEDGAR; Initial Catalog = dbfarmacia; Integrated Security = true";
 
             using (SqlConnection con = new SqlConnection(cadenaConexion))
             {

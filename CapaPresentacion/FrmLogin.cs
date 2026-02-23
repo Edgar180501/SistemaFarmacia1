@@ -79,12 +79,12 @@ namespace CapaPresentacion
 
 
                         // 2. Abrir el formulario principal (ESTO SE QUEDA IGUAL)
-                        FrmListadoProveedor menu = new FrmListadoProveedor();
+                        FrmPrincipal menuPrincipal = new FrmPrincipal();
                         this.Hide();
-                        menu.Show();
+                        menuPrincipal.Show();
 
                         // Cierra la aplicación totalmente al cerrar el menú
-                        menu.FormClosed += (s, args) =>
+                        menuPrincipal.FormClosed += (s, args) =>
                         {
                             // --- NUEVO: Agregamos la llamada para registrar la salida ---
                             RegistrarSalida();

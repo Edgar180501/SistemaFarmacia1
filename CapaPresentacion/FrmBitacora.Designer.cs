@@ -36,9 +36,9 @@
             // 
             this.dgvBitacora.BackgroundColor = System.Drawing.SystemColors.Control;
             this.dgvBitacora.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvBitacora.Location = new System.Drawing.Point(-3, 1);
+            this.dgvBitacora.Location = new System.Drawing.Point(38, 12);
             this.dgvBitacora.Name = "dgvBitacora";
-            this.dgvBitacora.Size = new System.Drawing.Size(1224, 532);
+            this.dgvBitacora.Size = new System.Drawing.Size(1022, 544);
             this.dgvBitacora.TabIndex = 0;
             this.dgvBitacora.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvBitacora_CellContentClick);
             // 
