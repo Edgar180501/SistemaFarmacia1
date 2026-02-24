@@ -70,6 +70,8 @@ namespace CapaPresentacion
                         // ExecuteScalar ejecuta la consulta y devuelve la primera columna de la primera fila (el ID)
                         object resultado = cmdAudit.ExecuteScalar();
 
+                        // Dentro del botón de ingresar de tu FrmLogin
+                        
                         if (resultado != null)
                         {
                             Sesion.IdSesionActual = Convert.ToInt32(resultado);

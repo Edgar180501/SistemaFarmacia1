@@ -34,6 +34,7 @@
             this.btnRegistrar = new System.Windows.Forms.Button();
             this.btnBitácora = new System.Windows.Forms.Button();
             this.btnProveedores = new System.Windows.Forms.Button();
+            this.btnVerAuditoria = new System.Windows.Forms.Button();
             this.panelMenu.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -49,6 +50,7 @@
             // panelMenu
             // 
             this.panelMenu.BackgroundImage = global::CapaPresentacion.Properties.Resources.images1;
+            this.panelMenu.Controls.Add(this.btnVerAuditoria);
             this.panelMenu.Controls.Add(this.textBox1);
             this.panelMenu.Controls.Add(this.btnRegistrar);
             this.panelMenu.Controls.Add(this.btnBitácora);
@@ -79,7 +81,7 @@
             this.btnRegistrar.FlatAppearance.BorderColor = System.Drawing.Color.Cyan;
             this.btnRegistrar.FlatAppearance.BorderSize = 0;
             this.btnRegistrar.Font = new System.Drawing.Font("Verdana", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnRegistrar.Location = new System.Drawing.Point(0, 292);
+            this.btnRegistrar.Location = new System.Drawing.Point(0, 262);
             this.btnRegistrar.Name = "btnRegistrar";
             this.btnRegistrar.Size = new System.Drawing.Size(200, 60);
             this.btnRegistrar.TabIndex = 2;
@@ -91,9 +93,9 @@
             // 
             this.btnBitácora.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
             this.btnBitácora.Font = new System.Drawing.Font("Verdana", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnBitácora.Location = new System.Drawing.Point(0, 181);
+            this.btnBitácora.Location = new System.Drawing.Point(0, 166);
             this.btnBitácora.Name = "btnBitácora";
-            this.btnBitácora.Size = new System.Drawing.Size(200, 66);
+            this.btnBitácora.Size = new System.Drawing.Size(200, 63);
             this.btnBitácora.TabIndex = 1;
             this.btnBitácora.Text = "Bitácora";
             this.btnBitácora.UseVisualStyleBackColor = false;
@@ -110,6 +112,18 @@
             this.btnProveedores.Text = "Proveedores";
             this.btnProveedores.UseVisualStyleBackColor = false;
             this.btnProveedores.Click += new System.EventHandler(this.btnProveedores_Click_1);
+            // 
+            // btnVerAuditoria
+            // 
+            this.btnVerAuditoria.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
+            this.btnVerAuditoria.Font = new System.Drawing.Font("Verdana", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnVerAuditoria.Location = new System.Drawing.Point(0, 357);
+            this.btnVerAuditoria.Name = "btnVerAuditoria";
+            this.btnVerAuditoria.Size = new System.Drawing.Size(200, 59);
+            this.btnVerAuditoria.TabIndex = 0;
+            this.btnVerAuditoria.Text = "Ver Auditoria";
+            this.btnVerAuditoria.UseVisualStyleBackColor = false;
+            this.btnVerAuditoria.Click += new System.EventHandler(this.btnVerAuditoria_Click);
             // 
             // FrmPrincipal
             // 
@@ -135,5 +149,6 @@
         private System.Windows.Forms.Button btnRegistrar;
         private System.Windows.Forms.Button btnBitácora;
         private System.Windows.Forms.Button btnProveedores;
+        private System.Windows.Forms.Button btnVerAuditoria;
     }
 }

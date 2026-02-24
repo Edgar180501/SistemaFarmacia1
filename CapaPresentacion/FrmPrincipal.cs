@@ -79,5 +79,27 @@ namespace CapaPresentacion
         {
             AbrirFormularioEnPanel(new FrmBitacora());
         }
+
+        private void btnVerAuditoria_Click(object sender, EventArgs e)
+        {
+            // Reemplaza 'UsuarioSesion' por la variable donde guardas el nombre al loguearte
+            if (VariablesGlobales.NombreUsuario == "admin")
+            {
+                FrmBitacora frm = new FrmBitacora();
+                frm.ShowDialog(); // Abrir la tabla de tiempos
+            }
+            else
+            {
+                MessageBox.Show("Acceso denegado. Solo el administrador puede ver los tiempos de conexión.");
+            }
+        }
+    }
+}
+namespace CapaPresentacion // Asegúrate de que el namespace coincida con tus formularios
+{
+    public static class VariablesGlobales
+    {
+        // Esta variable guardará el nombre del usuario que hizo login
+        public static string NombreUsuario;
     }
 }
